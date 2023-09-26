@@ -22,4 +22,3 @@ console.log(fullName);
 let fullName1 = `${user.name} ${user.lastname} is ${user.age} years old from ${user.country.name}/${user.country.city.name}`;
 console.log(fullName1);
 
-

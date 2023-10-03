@@ -39,13 +39,20 @@
 
 
 
-function detyra1(a, b){
-    let shuma = a+b;
-    return shuma;
+// function detyra1(a, b){
+//     let shuma = a+b;
+//     return shuma;
+// }
+
+// console.log(detyra1(10, 9));
+
+function sum(num1, num2) {
+    if (num1 === undefined || num2 === undefined) {
+        return 'Please check the values.';
+    } else {
+        return num1 + num2;
+    }
 }
+console.log(sum(6, 2));
 
-console.log(detyra1(10, 9));
-
-
-
-module.exports = detyra1;
+module.exports =  sum ;

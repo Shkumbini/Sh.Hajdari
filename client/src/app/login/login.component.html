@@ -1,0 +1,9 @@
+<div *ngFor="let phone of arr">
+  <div class="d-flex">
+    <p>{{ phone.name }}</p>
+    <p>{{ phone.price }}</p>
+    <input type="number" />
+    <p (click)="changePrice(phone.id, true)">+</p>
+    <p (click)="changePrice(phone.id, false)">-</p>
+  </div>
+</div>

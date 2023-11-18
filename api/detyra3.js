@@ -8,7 +8,7 @@ function sum(num1, num2) {
     }
 }
 
-let arr1 = [2,4,'hej',7,2];
+let arr1 = [2,4,9,7,2];
 let arr2 = [2,5,6,6,7];
 
 let arr3 = [];

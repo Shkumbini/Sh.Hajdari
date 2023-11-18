@@ -1,11 +1,12 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require("cors");
 require("dotenv").config();
 
 const app = express();
 const port = 3000;
 const userRouters = require("./routers/users");
-
+app.use(cors());
 app.use(bodyParser.json());
 
 app.get("/sporteli/:id", (req, res) => {

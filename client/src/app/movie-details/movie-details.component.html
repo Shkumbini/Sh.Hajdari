@@ -1,0 +1,27 @@
+<div class="movie_card" id="bright">
+  <div class="info_section">
+    <div class="movie_header">
+      <img class="locandina" src="{{ movieDetails.poster_path }}" />
+      <h1>{{ movieDetails.title }}</h1>
+      <h4>2017, David Ayer</h4>
+      <span class="minutes">117 min</span>
+      <p class="type">Action, Crime, Fantasy</p>
+    </div>
+    <div class="movie_desc">
+      <p class="text">
+        {{ movieDetails.overview }}
+      </p>
+    </div>
+    <div class="movie_social">
+      <ul>
+        <li><i class="material-icons">share</i></li>
+        <li><i class="material-icons"></i></li>
+        <li><i class="material-icons">chat_bubble</i></li>
+      </ul>
+    </div>
+  </div>
+  <div
+    class="blur_back bright_back"
+    style="background-image: url({{ movieDetails.poster_path }})"
+  ></div>
+</div>

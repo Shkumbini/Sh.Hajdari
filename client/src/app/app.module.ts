@@ -7,6 +7,11 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieDetailsComponent } from './movie-details/movie-details.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +19,13 @@ import { ForgotpasswordComponent } from './forgotpassword/forgotpassword.compone
     LoginComponent,
     RegisterComponent,
     NotFoundComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    DashboardComponent,
+    MoviesComponent,
+    MovieDetailsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
